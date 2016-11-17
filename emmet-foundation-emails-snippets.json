@@ -1,0 +1,74 @@
+{
+	"html" : {
+		"filters" : "html",
+		"profile" : "html",
+		
+		"snippets" : {
+			"cgh": "<!-- content goes in here -->",
+			"off-canvas-icon" : "<a class=\"left-off-canvas-toggle menu-icon\" href=\"#\"><span></span></a>",
+			"progress-meter" : "<span class=\"meter\" style=\"width: 100%\"></span>",
+			"rns" : "<!-- Right Nav Section -->\n",
+			"rbcharview" : "<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n",
+			"rbtitle" : "<title>Foundation 5</title>",
+			"rbifcss" : "\n<!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->",
+			"rbnormalize" : "<link rel=\"stylesheet\" href=\"css/normalize.css\">",
+			"rbstylesheet" : "<link rel=\"stylesheet\" href=\"css/foundation.css\">",
+
+			"rbhead" : "<!doctype html>\n<!--[if IE 9]><html class=\"lt-ie10\" lang=\"en\" > <![endif]-->\n<html class=\"no-js\" lang=\"en\" >\n\n",
+			"rbmodernizr" : "\n<script src=\"js/vendor/modernizr.js\"></script>\n",
+		
+		
+            "endbody" : "</body>",
+            "endhtml" : "</html>"
+		},
+		
+		"abbreviations": {
+			
+			"zf-head": "rbhead>(head>rbcharview>rbtitle>rbifcss>rbnormalize>rbstylesheet>rbappstylesheet>rbmodernizr)>{\n<body>\n\n${1:<!--Your content here-->}|}",
+			"zf-footer": "fjquery>fscript>endbody>endhtml>{}",
+			
+			"zf-foundation": "zf-head>zf-footer",
+			
+			"zf-row" : "<div class=\"row\">",
+			"zf-col" : "<div class=\"columns\">",
+			
+			"zf-accordion" : "dl.accordion[data-accordion=data-accordion]>(zf-accordion-active-panel)>(dd*2>(a[href=#panel$@2]{Accordion $@2})>(div#panel$@2.content{Panel $@2 Content}))",
+			"zf-accordion-active-panel": "dd>(a[href=#panel$]{Accordion $})>div#panel$.content.active{Panel $ content (this panel has the class active so it will be open at pageload)}",
+			
+			"btn-small" : "button.tiny[href=]{}",
+			
+			
+			"zf-button" : "{<!-- Size Classes: [tiny small large] -->\n<!-- Radius Classes: [radius round] -->\n<!-- Color Classes: [secondary success alert] -->\n<!-- Disabled Class: disabled -->\n}>a[href=#].button{Default Button}",
+			
+			"zf-clearing" : "ul.clearing-thumbs[data-clearing=data-clearing]>(li>a[href=http://placehold.it/350x150&text=full-image-$]>img[src=http://placehold.it/150x150&text=thumbnail-$])*3",
+
+			"zf-dropdown-button": "{<!-- Size Classes: [tiny small medium large] -->\n<!-- Color Classes: [secondary alert success] -->\n<!-- Radius Classes: [radius round] -->\n}>(a[href=# data-dropdown=drop].button.dropdown{Dropdown Button})>{<br>}>ul#drop[data-dropdown-content=dropdown-content].f-dropdown>li*3>a[href=#]{Link $}",
+			
+	"1-col": "row>columns[small=1][large=1]*12",
+			
+	"2-col": "row>columns[small=2][large=2]*6",
+	
+	"3-col": "row>columns[small=3][large=3]*4",
+	
+	"4-col": "row>columns[small=4][large=4]*3",
+	
+	"5-col": "row>columns[small=12][large=5]+columns[small=12][large=7]",
+	
+	"6-col": "row>columns[small=12][large=6]*2",
+	
+	"7-col": "row>columns[small=12][large=7]+columns[small=12][large=5]",
+	
+	"8-col": "row>columns[small=12][large=8]+columns[small=12][large=4]",
+	
+	"9-col": "row>columns[small=12][large=9]+columns[small=12][large=3]",
+	
+	"10-col": "row>columns[small=12][large=10]+columns[small=12][large=2]",
+	
+	"11-col": "row>columns[small=12][large=10]+columns[small=12][large=2]",
+	
+	"12-col": "row>columns[small=12][large=12]",
+	
+			
+		}
+	}
+}
